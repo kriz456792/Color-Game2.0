@@ -82,7 +82,7 @@ Window {
             text: "Red"
             color: "black"
             anchors.centerIn: parent
-            font.pixelSize: 35
+            font.pixelSize: 45
             font.bold: true
         }
     }
