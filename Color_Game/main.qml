@@ -22,7 +22,7 @@ Window {
         onRandColor: function (hexCol, colName) { mainLabel.color = hexCol; }
     }
 
-    function getRandomColorTwo() {
+    function getRandomColor() {
 
         var val = 0
         val = Math.floor(Math.random() * 3);
@@ -131,7 +131,7 @@ Window {
             onReleased: {
                 if(mainLabel.text === firstColor && isInside(firstCircle.x, firstCircle.y)){
                     myRandomColorObject.generateRandomColor();
-                    getRandomColorTwo();
+                    getRandomColor();
                 }
 
                 firstCircle.x = myWindow.width / 3 - width
@@ -164,7 +164,7 @@ Window {
             onReleased: {
                 if(mainLabel.text === secondColor && isInside(secondCircle.x, secondCircle.y)){
                     myRandomColorObject2.generateRandomColor();
-                    getRandomColorTwo();
+                    getRandomColor();
                 }
 
                 secondCircle.x = myWindow.width / 2 - (width / 2)
@@ -197,7 +197,7 @@ Window {
             onReleased: {
                 if(mainLabel.text === thirdColor && isInside(thirdCircle.x, thirdCircle.y)){
                     myRandomColorObject3.generateRandomColor();
-                    getRandomColorTwo();
+                    getRandomColor();
                 }
 
                 //console.log("x:" + thirdCircle.x + " y:" + thirdCircle.y); //for testing
